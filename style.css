@@ -964,3 +964,42 @@ nav a:hover {
         font-size: 24px;
     }
 }
+@media (max-width: 800px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 800px) {
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100% !important;
+        max-width: 100%;
+        height: 280px !important;
+        object-fit: cover;
+    }
+}
